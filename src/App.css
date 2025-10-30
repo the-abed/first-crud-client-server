@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+.user{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.user-form{
+  border: 2px solid yellow;
+  padding: 20px;
+  margin: 20px;
+
+}
+.user-info{
+  border: 2px solid red;
+  width: 400px;
+  padding: 20px;
+}

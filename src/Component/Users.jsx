@@ -80,11 +80,10 @@ const Users = ({ usersPromise }) => {
   // 🧱 Render section: shows users and the add form
   // -----------------------------------------------------
   return (
-    <div>
-      <h2>Users : {users.length}</h2>
-
+    <div className="user">
+     
       {/* Form to add new user */}
-      <div>
+      <div className="user-form">
         <form onSubmit={handleAddUser}>
           <input type="text" name="name" placeholder="Enter name" /> <br />
           <input type="text" name="email" placeholder="Enter email" /> <br />
@@ -93,8 +92,8 @@ const Users = ({ usersPromise }) => {
       </div>
 
       {/* Display users list */}
-      <div>
-        <p>--------------------------</p>
+      <div className="user-info">
+         <h2>Users : {users.length}</h2>
 
         {users.map((user) => (
           <div key={user._id}>
